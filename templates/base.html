@@ -1,0 +1,22 @@
+<!DOCTYPE <html>
+  <head>
+  {% block head %}
+  <meta charset='utf-8'>
+  <title> Second web server </title>
+  {% block styles %}
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static, filename='css/myblog.css') }}
+  {% endblock %}
+  {% endblock %}
+</head>
+<body>
+	<div id="header">
+		<h1> MyBlog Home page </h1>
+  </div>
+    <div id="footer">
+    {% block footer %}
+    <h4>&copy; Copyright 2020 by MyBlog</h4>
+    {% endblock %}
+	</div>
+</body>
+{%block scripts %}{% endblock %}
+</html>
